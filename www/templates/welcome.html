@@ -7,21 +7,29 @@
             </div>
             <p class="title-d">om uw volledig verzorgde barbecue</p>
         </div>
-
-        <div class="gallery-img">
-            <div class="row">
+        <div class="row">
                	<div class="col" ng-click="openModal($index);">
-                    <div class="set-image">
-                        <a href="#/app/gallery-category/{{gal.id}}/{{gal.title._content}}">
-                            <figure class="image-set">
-                                <img ng-src="https://farm{{gal.primary_photo_farm}}.staticflickr.com/{{gal.primary_photo_server}}/{{gal.primary_photo_id}}_{{gal.primary_photo_secret}}_q.jpg" class="full-image">
-                                <figcaption>Test</figcaption>
-                            </figure>
-                        </a>
+                    <div class="vless">
+                    <h3 class="pull-right">Vless</h3>
                     </div>
                 </div> 
-            </div>
         </div>
+        <div class="row">
+               	<div class="col" ng-click="openModal($index);">
+                    <div class="satay">
+                    <h3 class="pull-right">BBQ satay</h3>
+                    </div>
+
+                </div> 
+        </div>
+        <div class="row">
+               	<div class="col" ng-click="openModal($index);">
+                    <div class="salad">
+                    <h3 class="pull-right">Salad</h3>
+                    </div>
+                </div> 
+        </div>
+
 
     </ion-content>
  <ion-tabs class="tabs-light tabs-icon-top">

@@ -162,7 +162,7 @@ img.img-responsive {
   -ms-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 100% 64%, 0% 83%, 56% 64%, 0% 83%);
   clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 100% 64%, 0% 83%, 56% 64%, 0% 83%);
   background-size: cover;
-  height: 215px; }
+  height: 206px; }
 
 .gallery2-set {
   background: url('../img/component/gallery2.png') no-repeat center center;
@@ -208,6 +208,26 @@ img.img-responsive {
   clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 100% 64%, 0% 83%, 56% 64%, 0% 83%);
   background-size: cover;
   height: 215px; }
+
+.vless {
+  background: url('../img/component/background/vless.jpg') no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height:100px; }
+
+  .satay {
+  background: url('../img/component/background/satay.jpg') no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height:100px; }
+
+  .salad {
+  background: url('../img/component/background/salad.jpg') no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height:100px; }
+
+
 
 .home-set {
   background: #9C27B0;
