@@ -1,0 +1,27 @@
+<ion-view view-title="drinken">
+    <div class="bar bar-header bar-dark">
+    </div>
+    <ion-content>
+        <div class="list" ng-repeat="product in products">
+            <a class="item item-thumbnail-left" href="#">
+                <img ng-src="{{product.featured_src}}">
+                <h2>{{product.title}}</h2>
+                <p data-ng-bind-html="product.short_description"></p>
+                <p>Price:{{product.price | currency:"€"}}</p>
+            </a>
+        </div>
+    </ion-content>
+    <ion-tabs class="tabs-light tabs-icon-top">
+        <ion-tab title="Home" href="#/app/welcome" icon-on="ln-home balanced" icon-off="ln-home">
+            </ion-content>
+        </ion-tab>
+        <ion-tab title="Pakketen" icon-on="ln-gift balanced" icon-off="ln-gift">
+        </ion-tab>
+        <ion-tab title="Zelf Combineren" href="#/app/drinken" icon-on="ln-tag balanced" icon-off="ln-tag">
+            <!-- Tab 1 content -->
+        </ion-tab>
+        <ion-tab title="Winkelwagen" icon-on="ln-cart balanced" icon-off="ln-cart" badge="5">
+            <!-- Tab 3 content -->
+        </ion-tab>
+    </ion-tabs>
+</ion-view>

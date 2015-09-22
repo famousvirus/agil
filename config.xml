@@ -2,10 +2,10 @@
 <widget id="com.ionicframework.ideaalcatering392308" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
   <name>IdeaalCatering</name>
   <description>
-        An Ionic Framework and Cordova project.
+        Bestel uw BBQ in uw mobiel.
     </description>
-  <author email="hi@ionicframework" href="http://ionicframework.com/">
-      Ionic Framework Team
+  <author email="argo@famouvirus.com" href="http://famousvirus.com/">
+      Famous Virus Creative Team
     </author>
   <content src="index.html"/>
   <access origin="*"/>

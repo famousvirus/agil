@@ -124,7 +124,7 @@ img.img-responsive {
 
 .bar-side {
   background-image: url('../img/side-menu.png') !important;
-  height: 166px !important;
+  height: 170px !important;
   background-size: 100% 100% !important;
   background-position: center, center; }
 
@@ -213,19 +213,22 @@ img.img-responsive {
   background: url('../img/component/background/vless.jpg') no-repeat center center;
   background-size: cover;
   width: 100%;
-  height:100px; }
+  height:23%;
+  min-height: 100px }
 
   .satay {
   background: url('../img/component/background/satay.jpg') no-repeat center center;
   background-size: cover;
   width: 100%;
-  height:100px; }
+  height:23%;
+  min-height: 100px }
 
   .salad {
   background: url('../img/component/background/salad.jpg') no-repeat center center;
   background-size: cover;
   width: 100%;
-  height:100px; }
+  height:23%;
+  min-height: 100px }
 
 
 
@@ -273,20 +276,6 @@ p.title-d {
 .has-header {
   top: 157px; }
 
-.bar {
-  border: none;
-  background-image: url('../img/side-menu.png');
-  background-position: bottom;
-  background-size: 100% 1px;
-  background-repeat: no-repeat; }
-
-.bars {
-  border: none;
-  background-image: url('../img/side-menu.png');
-  background-position: bottom;
-  background-size: 100% 0px !important;
-  background-repeat: no-repeat; }
-
 i.icon.side-menu-i {
   font-size: 22px !important; }
 
@@ -307,7 +296,8 @@ i.icon.side-menu-i {
 .side-image {
   text-align: center;
   margin: auto;
-  width: 100%; }
+  width: 100%; 
+  padding: auto; }
 
 .side-image img {
   text-align: center;

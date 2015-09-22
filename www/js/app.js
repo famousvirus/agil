@@ -4,22 +4,21 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers'])
+angular.module('ideaalCatering', ['ionic', 'ionizer-wooshop.controllers', 'ionizer-wooshop.services', 'common.services'])
 
 .run(function($ionicPlatform) {
-  $ionicPlatform.ready(function() {
-    // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
-    // for form inputs)
-    if (window.cordova && window.cordova.plugins.Keyboard) {
-      cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
-      cordova.plugins.Keyboard.disableScroll(true);
-
-    }
-    if (window.StatusBar) {
-      // org.apache.cordova.statusbar required
-      StatusBar.styleDefault();
-    }
-  });
+    //localStorage.clear();
+    $ionicPlatform.ready(function() {
+        // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
+        // for form inputs)
+        if (window.cordova && window.cordova.plugins && window.cordova.plugins.Keyboard) {
+            cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
+        }
+        if (window.StatusBar) {
+            // org.apache.cordova.statusbar required
+            StatusBar.styleLightContent();
+        }
+    });
 })
 
 .config(function($stateProvider, $urlRouterProvider) {
@@ -41,20 +40,30 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
   })
 
-  .state('app.browse', {
-      url: '/browse',
+  .state('app.pakketen', {
+      url: '/pakketen',
       views: {
         'menuContent': {
-          templateUrl: 'templates/browse.html'
+          templateUrl: 'templates/pakketen.html'
         }
       }
     })
+
+  .state('app.drinken', {
+      url: '/drinken',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/drinken.html',
+          controller: 'BrowseCtrl'
+        }
+      }
+    })
+
     .state('app.welcome', {
       url: '/welcome',
       views: {
         'menuContent': {
           templateUrl: 'templates/welcome.html',
-          controller: 'PlaylistsCtrl'
         }
       }
     })
@@ -64,7 +73,6 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     views: {
       'menuContent': {
         templateUrl: 'templates/playlist.html',
-        controller: 'PlaylistCtrl'
       }
     }
   });

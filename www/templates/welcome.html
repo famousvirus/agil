@@ -1,50 +1,58 @@
 <ion-view>
-    <ion-content style="top:0px" overflow-scroll="false" delegate-handle="mainScroll" on-scroll="mainscrolling();">
-
-        <div class="welcome-set">
-            <div class="map-set">
-                <h2 class="title-c">Welkom!</h2>
-            </div>
-            <p class="title-d">om uw volledig verzorgde barbecue</p>
-        </div>
-        <div class="row">
-               	<div class="col" ng-click="openModal($index);">
-                    <div class="vless">
-                    <h3 class="pull-right">Vless</h3>
+    <ion-tabs class="tabs-light tabs-icon-top">
+        <ion-tab title="Home" href="#/app/welcome" icon-on="ln-home balanced" icon-off="ln-home">
+            <ion-content style="top:0px" overflow-scroll="false" delegate-handle="mainScroll" on-scroll="mainscrolling();">
+                <div class="welcome-set">
+                    <div class="map-set">
+                        <h2 class="title-c">Welkom!</h2>
                     </div>
-                </div> 
-        </div>
-        <div class="row">
-               	<div class="col" ng-click="openModal($index);">
-                    <div class="satay">
-                    <h3 class="pull-right">BBQ satay</h3>
+                    <p class="title-d">om uw volledig verzorgde barbecue</p>
+                </div>
+                <div class="row">
+                    <div class="col" ng-click="openModal($index);">
+                        <div class="vless">
+                            <h3 class="pull-right">Vless</h3>
+                        </div>
                     </div>
-
-                </div> 
-        </div>
-        <div class="row">
-               	<div class="col" ng-click="openModal($index);">
-                    <div class="salad">
-                    <h3 class="pull-right">Salad</h3>
+                </div>
+                <div class="row">
+                    <div class="col" ng-click="openModal($index);">
+                        <div class="satay">
+                            <h3 class="pull-right">BBQ satay</h3>
+                        </div>
                     </div>
-                </div> 
-        </div>
-
-
-    </ion-content>
- <ion-tabs class="tabs-light tabs-icon-top">
-	<ion-tab title="Home" icon-on="ln-home balanced" icon-off="ln-home">
-	    <!-- Tab 1 content -->
-	</ion-tab>
-	<ion-tab title="Pakketen" icon-on="ln-gift balanced" icon-off="ln-gift">
-	    <!-- Tab 1 content -->
-	</ion-tab>
-
-	<ion-tab title="Zelf Combineren" icon-on="ln-tag balanced" icon-off="ln-tag">
-	    <!-- Tab 1 content -->
-	</ion-tab>
-	<ion-tab title="Winkelwagen" icon-on="ln-cart balanced" icon-off="ln-cart">
-	    <!-- Tab 3 content -->
-	</ion-tab>
-</ion-tabs>
+                </div>
+                <div class="row">
+                    <div class="col" ng-click="openModal($index);">
+                        <div class="salad">
+                            <h3 class="pull-right">Salad</h3>
+                        </div>
+                    </div>
+                </div>
+            </ion-content>
+        </ion-tab>
+        <ion-tab title="Pakketen" icon-on="ln-gift balanced" icon-off="ln-gift">
+            <ion-content style="top:0px" overflow-scroll="false" delegate-handle="mainScroll" on-scroll="mainscrolling();">
+                <div class="welcome-set">
+                    <div class="map-set">
+                        <h2 class="title-c">Paketten!</h2>
+                    </div>
+                    <p class="title-d">om uw volledig verzorgde barbecue</p>
+                </div>
+                <div class="row">
+                    <div class="col" ng-click="openModal($index);">
+                        <div class="vless">
+                            <h3 class="pull-right">Vless</h3>
+                        </div>
+                    </div>
+                </div>
+            </ion-content>
+        </ion-tab>
+        <ion-tab title="Zelf Combineren" href="#/app/drinken" icon-on="ln-tag balanced" icon-off="ln-tag">
+            <!-- Tab 1 content -->
+        </ion-tab>
+        <ion-tab title="Winkelwagen" icon-on="ln-cart balanced" icon-off="ln-cart" badge="6">
+            <!-- Tab 3 content -->
+        </ion-tab>
+    </ion-tabs>
 </ion-view>

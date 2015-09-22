@@ -1,10 +1,8 @@
 <ion-side-menus enable-menu-with-back-views="false">
-  <ion-side-menu-content>
-
+    <ion-side-menu-content>
         <ion-nav-bar class="navClass bar-stable">
             <ion-nav-back-button>
             </ion-nav-back-button>
-
             <ion-nav-buttons side="left">
                 <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
                 </button>
@@ -12,54 +10,40 @@
         </ion-nav-bar>
         <ion-nav-view name="menuContent"></ion-nav-view>
     </ion-side-menu-content>
-
     <ion-side-menu side="left">
         <ion-header-bar class="bar-side">
             <div class="side-image">
                 <figure>
-                   <a href="#/app/profile" menu-close><img src="img/component/ideaal-catering-logo.png"></a> 
+                    <a href="#/app/welcome" menu-close><img src="img/component/ideaal-catering-logo.png"></a>
                 </figure>
             </div>
-
         </ion-header-bar>
-        <ion-content style="top:166px;">
-           
-<!--           Begin Menu Here    -->
-           
-           
+        <ion-content style="top:170px;">
+            <!--           Begin Menu Here    -->
             <ion-list class="side-menu">
                 <ion-item nav-clear menu-close href="#/app/home" class="item-icon-left">
-                    <i class="icon ln-home3 side-menu-i"></i>
-                    BBQ Menu
+                    <i class="icon ln-home3 side-menu-i"></i> BBQ Menu
                 </ion-item>
-                  <ion-item nav-clear menu-close href="#/app/hometwo" class="item-icon-left">
-                    <i class="icon ln-home5 side-menu-i"></i>
-                    BBQ Planner
+                <ion-item nav-clear menu-close href="#/app/hometwo" class="item-icon-left">
+                    <i class="icon ln-home5 side-menu-i"></i> BBQ Planner
                 </ion-item>
                 <ion-item nav-clear menu-close href="#/app/gallery" class="item-icon-left">
-                    <i class="icon ln-picture side-menu-i"></i>
-                    BBQ Offerte
+                    <i class="icon ln-picture side-menu-i"></i> BBQ Offerte
                 </ion-item>
                 <ion-item nav-clear menu-close href="#/app/about" class="item-icon-left">
-                    <i class="icon ln-users side-menu-i"></i>
-                    Over Ideaal Catering
+                    <i class="icon ln-users side-menu-i"></i> Over Ideaal Catering
                 </ion-item>
                 <ion-item nav-clear menu-close href="#/app/contact" class="item-icon-left">
-                    <i class="icon ln-contacts side-menu-i"></i>
-                    Contact
+                    <i class="icon ln-contacts side-menu-i"></i> Contact
                 </ion-item>
                 <ion-item nav-clear menu-close href="#/app/faq" class="item-icon-left" ng-click="share();">
-                    <i class="icon ln-comments side-menu-i"></i>
-                    FAQ
+                    <i class="icon ln-comments side-menu-i"></i> FAQ
                 </ion-item>
                 <ion-item nav-clear menu-close href="#/user-login" class="item-icon-left" ng-click="logout()">
-                    <i class="icon ln-exit side-menu-i"></i>
-                    Sign Out
+                    <i class="icon ln-exit side-menu-i"></i> Sign Out
                 </ion-item>
             </ion-list>
-            
-<!--            Menu End    -->
-            
+            <!--            Menu End    -->
         </ion-content>
     </ion-side-menu>
 </ion-side-menus>
