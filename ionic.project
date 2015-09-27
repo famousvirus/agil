@@ -1,10 +1,4 @@
 {
   "name": "IdeaalCatering",
-  "app_id": "a92a3c0b",
-  "proxies": [
-    {
-      "path": "BBQ",
-      "proxyUrl": "http://bbq.ghighlights.com/barbecue-bestellen/wc-api/v2"
-    }
-  ]
+  "app_id": "a92a3c0b"
 }

@@ -2,7 +2,7 @@ angular.module('ionizer-wooshop.services', ['common.services'])
 
 .factory('dataService', ['$http', '$q', 'APIFunctions', 'utility', '$filter', function($http, $q, APIFunctions, utility, $filter) {
 
-    var baseURL = 'BBQ';
+    var baseURL = 'http://bbq.ghighlights.com/barbecue-bestellen/wc-api/v2';
 
     var callAPI = function() {
 
@@ -148,7 +148,7 @@ angular.module('ionizer-wooshop.services', ['common.services'])
 
             $http({
                     method: 'POST',
-                    url: 'BBQ' + '/API2.php', //'http://localhost:81/timurAnginREST' + '/API.php', //baseURL + '/API.php',
+                    url: 'http://bbq.ghighlights.com/barbecue-bestellen/wc-api/v2' + '/API2.php', //'http://localhost:81/timurAnginREST' + '/API.php', //baseURL + '/API.php',
                     transformRequest: function(obj) {
                         var str = [];
                         for (var p in obj)
