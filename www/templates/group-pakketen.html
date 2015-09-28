@@ -1,0 +1,26 @@
+<ion-view>
+    <div class="bar has-tabs-top bar-header bar-dark">
+        <h1 class="title">Group Pakketen</h1>
+    </div>
+    <ion-content overflow-scroll="false">
+        <div class="list card" ng-repeat="product in products | filter:{categories:'Groepspakketten'}">
+            <div class="item item-image" style="height: 200px;" > 
+                <img href="#" ng-src="{{product.featured_src}}" >
+            </div>
+            <a class="item assertive" href="#">
+                {{product.title}}
+                <span class="item-note">{{product.price | currency:"€"}}  </span>
+            </a>
+        </div>
+    </ion-content>
+    <ion-tabs class="tabs-light tabs-icon-top">
+        <ion-tab title="BBQ Planner" href="#" icon-on="ln-gift balanced" icon-off="ln-gift">
+        </ion-tab>
+        <ion-tab title="Whatsapp" href="whatsapp://send?abid=+31627890665" icon-on="ln-comments balanced" icon-off="ln-comments">
+            <!-- Tab 1 content -->
+        </ion-tab>
+        <ion-tab title="Winkelwagen" icon-on="ln-cart balanced" icon-off="ln-cart" badge="6">
+            <!-- Tab 3 content -->
+        </ion-tab>
+    </ion-tabs>
+</ion-view>
