@@ -23,7 +23,7 @@
         </div>
     </div>
     <ion-content class="has-tabs-top" overflow-scroll="false">
-        <div class="list card" ng-repeat="product in products">
+        <div class="list card" ng-repeat="product in products | filter:{categories:'Vlees'}">
             <div class="item item-image" style="height: 200px;" > 
                 <img href="#" ng-src="{{product.featured_src}}" >
             </div>
@@ -42,7 +42,7 @@
         <ion-tab title="Zelf Combineren" href="#/app/drinken" icon-on="ln-tag balanced" icon-off="ln-tag">
             <!-- Tab 1 content -->
         </ion-tab>
-        <ion-tab title="Winkelwagen" icon-on="ln-cart balanced" icon-off="ln-cart" badge="5">
+        <ion-tab title="Winkelwagen" icon-on="ln-cart balanced" icon-off="ln-cart" badge="900">
             <!-- Tab 3 content -->
         </ion-tab>
     </ion-tabs>

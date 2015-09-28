@@ -40,16 +40,17 @@ angular.module('ideaalCatering', ['ionic', 'ionizer-wooshop.controllers', 'ioniz
     }
   })
 
-  .state('app.pakketen', {
+    .state('app.pakketen', {
       url: '/pakketen',
       views: {
         'menuContent': {
-          templateUrl: 'templates/pakketen.html'
+          templateUrl: 'templates/pakketen.html',
+          controller: 'BrowseCtrl'
         }
       }
     })
 
-  .state('app.drinken', {
+    .state('app.drinken', {
       url: '/drinken',
       views: {
         'menuContent': {
@@ -64,6 +65,48 @@ angular.module('ideaalCatering', ['ionic', 'ionizer-wooshop.controllers', 'ioniz
       views: {
         'menuContent': {
           templateUrl: 'templates/welcome.html',
+          controller: 'BrowseCtrl'
+        }
+      }
+    })
+
+
+    .state('app.zelfcombineren', {
+      url: '/zelfcombineren',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/zelf-combineren.html',
+          controller: 'BrowseCtrl'
+        }
+      }
+    })
+
+    .state('app.grouppakketen', {
+      url: '/grouppakketen',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/group-pakketen.html',
+          controller: 'BrowseCtrl'
+        }
+      }
+    })
+
+    .state('app.drankarrangement', {
+      url: '/drankarrangement',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/drankarrangement.html',
+          controller: 'BrowseCtrl'
+        }
+      }
+    })
+
+  .state('app.verhuurproducten', {
+      url: '/verhuurproducten',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/verhuurproducten.html',
+          controller: 'BrowseCtrl'
         }
       }
     })
