@@ -22,113 +22,131 @@ angular.module('ideaalCatering', ['ionic', 'ionizer-wooshop.controllers', 'ioniz
 })
 
 .config(function($stateProvider, $urlRouterProvider) {
-  $stateProvider
+    $stateProvider
 
-    .state('app', {
-    url: '/app',
-    abstract: true,
-    templateUrl: 'templates/menu.html',
-    controller: 'AppCtrl'
-  })
+        .state('app', {
+        url: '/app',
+        abstract: true,
+        templateUrl: 'templates/menu.html',
+        controller: 'AppCtrl'
+    })
 
-  .state('app.search', {
-    url: '/search',
-    views: {
-      'menuContent': {
-        templateUrl: 'templates/search.html'
-      }
-    }
-  })
+    .state('app.search', {
+        url: '/search',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/search.html'
+            }
+        }
+    })
 
     .state('app.pakketen', {
-      url: '/pakketen',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/pakketen.html',
-          controller: 'BrowseCtrl'
+        url: '/pakketen',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/pakketen.html',
+                controller: 'BrowseCtrl'
+            }
         }
-      }
     })
 
     .state('app.drinken', {
-      url: '/drinken',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/drinken.html',
-          controller: 'BrowseCtrl'
+        url: '/drinken',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/drinken.html',
+                controller: 'BrowseCtrl'
+            }
         }
-      }
     })
 
     .state('app.welcome', {
-      url: '/welcome',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/welcome.html',
-          controller: 'BrowseCtrl'
+        url: '/welcome',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/welcome.html',
+                controller: 'BrowseCtrl'
+            }
         }
-      }
     })
 
 
     .state('app.zelfcombineren', {
-      url: '/zelfcombineren',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/zelf-combineren.html',
-          controller: 'BrowseCtrl'
+        url: '/zelfcombineren',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/zelf-combineren.html',
+                controller: 'BrowseCtrl'
+            }
         }
-      }
     })
 
-    .state('app.grouppakketen', {
-      url: '/grouppakketen',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/group-pakketen.html',
-          controller: 'BrowseCtrl'
+    .state('app.groepspakketten', {
+        url: '/groepspakketten',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/groepspakketten.html',
+                controller: 'BrowseCtrl'
+            }
         }
-      }
     })
 
     .state('app.drankarrangement', {
-      url: '/drankarrangement',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/drankarrangement.html',
-          controller: 'BrowseCtrl'
+        url: '/drankarrangement',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/drankarrangement.html',
+                controller: 'BrowseCtrl'
+            }
         }
-      }
     })
 
-  .state('app.verhuurproducten', {
-      url: '/verhuurproducten',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/verhuurproducten.html',
-          controller: 'BrowseCtrl'
+    .state('app.verhuurproducten', {
+        url: '/verhuurproducten',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/verhuurproducten.html',
+                controller: 'BrowseCtrl'
+            }
         }
-      }
     })
 
     .state('app.bbq-planner', {
-      url: '/bbq-planner',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/bbq-planner.html',
-          controller: 'BbqPlannerCtrl'
+        url: '/bbq-planner',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/bbq-planner.html',
+
+            }
         }
-      }
     })
 
-  .state('app.single', {
-    url: '/playlists/:playlistId',
-    views: {
-      'menuContent': {
-        templateUrl: 'templates/playlist.html',
-      }
-    }
-  });
-  // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/welcome');
+    .state('app.over-ons', {
+        url: '/over-ons',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/over-ons.html',
+            }
+        }
+    })
+
+    .state('app.hoe-werkt-het', {
+        url: '/hoe-werkt-het',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/hoe-werkt-het.html',
+            }
+        }
+    })
+
+    .state('app.single', {
+        url: '/playlists/:playlistId',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/playlist.html',
+            }
+        }
+    });
+    // if none of the above states are matched, use this as the fallback
+    $urlRouterProvider.otherwise('/app/welcome');
 });
