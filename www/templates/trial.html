@@ -1,0 +1,50 @@
+<div ng-app="myApp">
+	<div class="tabs">
+		<a href="" title="" class="tab selected" rel="tab1" ng:click="selected=1" ng:class="{'active' : selected==1 }">Purchases</a>
+		<a href="" title="" class="tab" rel="tab2" ng:click="selected=2" ng:class="{'active' : selected==2 }">Products on sale</a>
+		<a href="" title="" class="tab" rel="tab3" ng:click="selected=3" ng:class="{'active' : selected==3 }">Last 30 days sales</a>
+	</div>
+	<div id="tab1" class="tabContent selected" ng-controller="PurchasesCtrl" ng:show="selected == 1">
+        <h2>Purchases:</h2>
+		<table cellspacing="0">
+			<tr class="first">
+				<th class="first">Date</th>
+				<th>Description</th>
+			</tr>
+			<tr ng-repeat="purchase in purchases.data" ng-class-odd="'odd'" ng-class-even="'even'" ng-class="{'last':$last}">
+				<td class="first">{{purchase.date}}</td>
+				<td>{{purchase.text}}</td>
+			</tr>
+        </table>
+	</div>
+
+
+	<div id="tab2" class="tabContent selected" ng-controller="SaleProductsCtrl" ng:show="selected == 2">
+        <h2>Sale products:</h2>							
+		<table cellspacing="0">
+			<tr class="first">
+				<th class="first">Date</th>
+				<th>Description</th>
+			</tr>
+			<tr ng-repeat="saleProduct in saleProducts.data" ng-class-odd="'odd'" ng-class-even="'even'" ng-class="{'last':$last}">
+				<td class="first">{{saleProduct.date}}</td>
+				<td>{{saleProduct.text}}</td>
+			</tr>
+        </table>
+	</div>
+
+
+	<div id="tab3" class="tabContent selected" ng-controller="Sale30DaysCtrl" ng:show="selected == 3">
+        <h2>Sale 30 days:</h2>
+		<table cellspacing="0">
+			<tr class="first">
+				<th class="first">Date</th>
+				<th>Description</th>
+			</tr>
+			<tr ng-repeat="sale30Day in sale30Days.data" ng-class-odd="'odd'" ng-class-even="'even'" ng-class="{'last':$last}">
+				<td class="first">{{sale30Day.date}}</td>
+				<td>{{sale30Day.text}}</td>
+			</tr>
+        </table>
+	</div>
+</div>
