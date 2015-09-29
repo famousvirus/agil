@@ -111,6 +111,16 @@ angular.module('ideaalCatering', ['ionic', 'ionizer-wooshop.controllers', 'ioniz
       }
     })
 
+    .state('app.bbq-planner', {
+      url: '/bbq-planner',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/bbq-planner.html',
+          controller: 'BbqPlannerCtrl'
+        }
+      }
+    })
+
   .state('app.single', {
     url: '/playlists/:playlistId',
     views: {
