@@ -1,8 +1,8 @@
-<ion-view>
+<ion-view header-shrink>
     <div class="bar has-tabs-top bar-header bar-dark">
         <h1 class="title">Group Pakketen</h1>
     </div>
-    <ion-content overflow-scroll="false">
+    <ion-content overflow-scroll="false" >
         <div class="list card" ng-repeat="product in products | filter:{categories:'Groepspakketten'}">
             <div class="item item-image" style="height: 200px;" > 
                 <img href="#" ng-src="{{product.featured_src}}" >

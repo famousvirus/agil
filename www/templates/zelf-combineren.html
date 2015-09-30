@@ -1,4 +1,4 @@
-<ion-view>
+<ion-view >
     <div class="bar has-tabs-top bar-header bar-dark">
         <h1 class="title">Zelf Combineren</h1>
     </div>
@@ -13,7 +13,7 @@
     </div>
 
     <div id="tab1" class="tabContent selected" ng:show="selected == 1">
-    <ion-content class="has-tabs-top" overflow-scroll="false">
+    <ion-content class="has-tabs-top" overflow-scroll="false" scroll-sista delegate-handle-"myScrollDelegate">
         <div class="list card" ng-repeat="product in products | filter:{categories:'Vlees'}">
             <div class="item item-image" style="height: 200px;" > 
                 <img href="#" ng-src="{{product.featured_src}}" >
@@ -27,7 +27,7 @@
     </div>
 
     <div id="tab2" class="tabContent selected" ng:show="selected == 2">
-    <ion-content class="has-tabs-top" overflow-scroll="false">
+    <ion-content class="has-tabs-top" overflow-scroll="false" scroll-sista delegate-handle-"myScrollDelegate">
         <div class="list card" ng-repeat="product in products | filter:{categories:'Vegetarisch'}">
             <div class="item item-image" style="height: 200px;" > 
                 <img href="#" ng-src="{{product.featured_src}}" >
@@ -41,7 +41,7 @@
     </div>
 
     <div id="tab3" class="tabContent selected" ng:show="selected == 3">
-    <ion-content class="has-tabs-top" overflow-scroll="false">
+    <ion-content class="has-tabs-top" overflow-scroll="false"scroll-sista delegate-handle-"myScrollDelegate">
         <div class="list card" ng-repeat="product in products | filter:{categories:'Vis'}">
             <div class="item item-image" style="height: 200px;" > 
                 <img href="#" ng-src="{{product.featured_src}}" >
@@ -55,7 +55,7 @@
     </div>
 
     <div id="tab4" class="tabContent selected" ng:show="selected == 4">
-    <ion-content class="has-tabs-top" overflow-scroll="false">
+    <ion-content class="has-tabs-top" overflow-scroll="false" scroll-sista delegate-handle-"myScrollDelegate">
         <div class="list card" ng-repeat="product in products | filter:{categories:'Specials'}">
             <div class="item item-image" style="height: 200px;" > 
                 <img href="#" ng-src="{{product.featured_src}}" >
@@ -69,7 +69,7 @@
     </div>
 
     <div id="tab5" class="tabContent selected" ng:show="selected == 5">
-    <ion-content class="has-tabs-top" overflow-scroll="false">
+    <ion-content class="has-tabs-top" overflow-scroll="false" scroll-sista delegate-handle-"myScrollDelegate">
         <div class="list card" ng-repeat="product in products | filter:{categories:'Salades'}">
             <div class="item item-image" style="height: 200px;" > 
                 <img href="#" ng-src="{{product.featured_src}}" >
